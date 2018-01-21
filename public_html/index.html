@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+ * Name: Neha 
+ * Assignment: Assignment3
+ * Program: Form 
+* my url - http://neneha.dev.fast.sheridanc.on.ca/sem2-assignments/a3_Neha_Neha/public_html/
+* username- neha
+* password- 6690
+-->
+<html>
+
+<head>
+    <title>Assignment 3: Neha</title>
+    <link href="./style/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1> </h1>
+	  <div class="form-div">
+        <form action="thankyou.html" name="myForm">
+            <label> Enter your name: <input type="text" name="name" id="name" onblur="checkName()"></label>
+            <span id="nameError"></span>
+
+            <br> <br>
+            <label> Enter your Password: <input type="password" name="password" id="password" onkeyup="passMeter()"></label>
+            <div id="progress">
+                <div id="passHealth"></div>
+            </div>
+            <span id="passwordError"></span>
+            <br> <br>
+            <label> Confirm your Password: <input type="password" name="confirmpass" id="confirmpass" onkeyup="confirmPass()"></label>
+            <span id="confirmError"></span>
+
+            <br> <br> Select your gender:
+            <span id="genderError"> </span>
+            <br>
+            <input type="radio" name="gender" value="Female" onblur="checkGender()"> Female <br>
+            <input type="radio" name="gender" value="Male" onblur="checkGender()"> Male <br> <br>
+
+            <label> Enter your Email Id: <input type="text" id="email" onblur="checkEmail()"></label>
+            <span id="emailError"></span>
+            <br> <br>
+            <label> Enter your Contact Number: <input type="number" name="contact" id="contact" onblur="checkContact()"></label>
+            <span id="contactError"></span>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <br> <br>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <script src="scripts/const.js"></script>
+</body>
+
+</html>

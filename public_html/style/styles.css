@@ -1,0 +1,31 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+	background-image: url("../images/a3-background.jpeg");
+	background-size: cover;
+}
+
+.form-div{
+	text-align: center;
+}
+
+form {
+    display: inline-block;
+	text-align:left;
+	background-color: rgba(35, 39, 42,0.7);
+    padding: 25px;
+	color: mintcream;
+}
+
+#progress {
+    border: 1px solid gray;
+    width: 75px;
+    height: 10px;
+    display: none;
+}
+
+#passHealth {
+    width: 0%;
+    height: 10px;
+    background-color: lightgreen;
+}
